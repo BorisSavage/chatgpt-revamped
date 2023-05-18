@@ -79,7 +79,7 @@ export default function ChatInput({ chatId }: { chatId: string }) {
 
                     <button
                         disabled={!session || !prompt}
-                        className="text-dangreen-500 transition duration-1000 ease-savage-sig-2 disabled:text-danviolet-400"
+                        className="text-dangreen-500 transition duration-1000 ease-savage_sig disabled:text-danviolet-400"
                     >
                         <PaperAirplaneIcon className="h-5 w-5 -rotate-45 " />
                     </button>
