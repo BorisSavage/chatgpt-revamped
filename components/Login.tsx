@@ -1,29 +1,30 @@
-/***
- *
+/**
  * Login Component
  *
- * This component displays a login screen with a logo and a sign-in button.
- * It utilizes Next.js Image component to render the logo image.
- * When the sign-in button is clicked, it triggers the signIn function with Google provider.
- * The component also includes animation and styling using Tailwind CSS classes.
- *
- ***/
+ * This component represents the login screen for the ChatGPT clone.
+ * It displays a logo image, a sign-in button, and some visual effects.
+ */
 
 "use client";
 
+// Import necessary dependencies
 import DanGPT_logo from "@/public/ClosedAI_logo.png";
 import { signIn } from "next-auth/react";
 import Image from "next/image";
 import { useState } from "react";
 
+// Define and export the Login component
 export default function Login() {
+  // State to track whether the button is clicked or not
   const [isClicked, setIsClicked] = useState(false);
 
+  // Function to handle button click
   const handleButtonClick = () => {
     setIsClicked(true);
     signIn("google");
   };
 
+  // Render the Login component
   return (
     <div className="relative flex h-screen flex-col items-center justify-center overflow-clip bg-danviolet-950 p-10">
       <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -56,23 +57,10 @@ export default function Login() {
                 0 0 1px rgba(0,0,0,1)
                 `,
               }}
-              //className="absolute left-0 top-0 text-black"
               className="relative animate-pulse text-white opacity-100 transition duration-1000 ease-savage_sig group-hover:animate-none group-hover:text-black"
             >
               Sign in to Chat with GPT
             </span>
-            {/* <span
-              style={{
-                textShadow:
-                  "0 0 4px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,1)",
-              }}
-              className="absolute left-0 top-0 text-transparent"
-            >
-              Sign in to Chat with GPT
-            </span> */}
-            {/* <span className="relative text-white opacity-100 transition duration-1000 ease-savage_sig group-hover:text-transparent">
-              Sign in to Chat with GPT
-            </span> */}
           </div>
         </button>
       </div>

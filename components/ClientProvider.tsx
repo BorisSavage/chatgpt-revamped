@@ -3,9 +3,15 @@
 import { Toaster } from "react-hot-toast";
 
 export default function ClientProvider() {
-    return (
-        <>
-            <Toaster position="top-right" />
-        </>
-    );
+  return (
+    <>
+      <Toaster
+        position="bottom-center"
+        containerStyle={{
+          position: "absolute",
+          bottom: "5rem",
+        }}
+      />
+    </>
+  );
 }

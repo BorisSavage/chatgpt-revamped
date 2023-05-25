@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "380px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -57,6 +61,8 @@ module.exports = {
         },
       },
       animation: {
+        shadow_alternate:
+          "shadow-sm 0.5s ease-in-out alternate infinite, shadow-lg 0.5s ease-in-out alternate infinite",
         tilt: "tilt 10s infinite ease-in-out",
         tilty: "tilty 40s infinite linear",
         slight_tilt: "slight_tilt 10s infinite ease-in-out",
@@ -179,5 +185,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };
