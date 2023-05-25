@@ -28,8 +28,8 @@ export default async function handler(
 
   const now = admin.firestore.Timestamp.now();
   const date = now.toDate();
-  const timeDiff = 17;
-  date.setSeconds(date.getSeconds() - timeDiff);
+  const timeDiff = 1;
+  date.setSeconds(date.getSeconds() + timeDiff);
   const normalizedTimestamp = admin.firestore.Timestamp.fromDate(date);
 
   const message: Message = {
