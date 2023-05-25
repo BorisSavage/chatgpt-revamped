@@ -15,7 +15,7 @@ import ExamplePrompt from "@/components/ExamplePrompt";
 
 export default function page() {
   return (
-    <div className="relative flex h-screen flex-col">
+    <div className="relative flex h-[100dvh] flex-col">
       <div className="flex flex-1 flex-col items-center justify-start overflow-y-auto overflow-x-hidden px-2 pb-44 pt-[10vh] text-danviolet-50 scrollbar-thin scrollbar-thumb-danviolet-700 scrollbar-thumb-rounded-full lg:pt-[20vh]">
         <div className="mb-20 text-5xl font-bold">ChatGPT</div>
 

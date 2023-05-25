@@ -26,7 +26,7 @@ export default function Login() {
 
   // Render the Login component
   return (
-    <div className="relative flex h-screen flex-col items-center justify-center overflow-clip bg-danviolet-950 p-10">
+    <div className="relative flex h-[100dvh] flex-col items-center justify-center overflow-clip bg-danviolet-950 p-10">
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="relative flex h-[500px] w-[500px] -skew-x-12 -skew-y-12 animate-tilty flex-col items-center justify-center overflow-visible bg-gradient-radial from-danviolet-300 from-30% via-dangreen-300 via-50% to-transparent to-70% opacity-20 blur-sm">
           <div className="relative h-[42.8%] w-[42.8%] bg-gradient-radial from-danblue-300 from-30% via-danviolet-300 via-65% to-transparent to-70%"></div>

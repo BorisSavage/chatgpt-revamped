@@ -63,7 +63,7 @@ export default function Sidebar() {
       ></div>
 
       <div
-        className={`fixed -left-3/4 top-0 z-50 flex h-screen w-3/4 flex-col justify-between bg-danviolet-900 transition duration-500 ease-savage_sig md:static md:left-0 md:w-[20rem] ${
+        className={`fixed -left-3/4 top-0 z-50 flex h-[100dvh] w-3/4 flex-col justify-between bg-danviolet-900 transition duration-500 ease-savage_sig md:static md:left-0 md:w-[20rem] ${
           show ? "max-md:translate-x-full" : "opacity-0 md:opacity-100"
         } `}
       >
