@@ -68,8 +68,11 @@ export default function page() {
               <InfoText
                 info={
                   <>
-                    <p>Gotta admit the OG is a little better</p>{" "}
-                    <span className="opacity-50">{"¯\\_(ツ)_/¯"}</span>
+                    <p>
+                      Can be overwhelmed with too many users because of the
+                      OpenAI rate limits{" "}
+                      <span className="opacity-50">{"¯\\_(ツ)_/¯"}</span>
+                    </p>
                   </>
                 }
               ></InfoText>
