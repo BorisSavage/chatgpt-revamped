@@ -35,7 +35,7 @@ export default function Login() {
 
       <Image
         className={`relative mb-14 transition duration-1000 ${
-          isClicked && "animate-roundhouse_slow opacity-0"
+          isClicked && "animate-roundhouse_slow opacity-20"
         }`}
         src={DanGPT_logo}
         width={300}
