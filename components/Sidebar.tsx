@@ -41,6 +41,7 @@ export default function Sidebar() {
             show ? "opacity-0" : ""
           }`}
         />
+
         <div
           className={`absolute inset-0 animate-shadow_alternate rounded-sm shadow shadow-danblue-300/80 transition duration-[3000ms] ease-savage_sig group-hover:duration-[1000ms] ${
             show ? "opacity-0" : ""
